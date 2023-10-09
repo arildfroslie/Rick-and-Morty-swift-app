@@ -14,6 +14,17 @@
 		D888D8B22AD40DD80004D11E /* RnMortyApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8B12AD40DD80004D11E /* RnMortyApiTests.swift */; };
 		D888D8BC2AD40DD80004D11E /* RnMortyApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8BB2AD40DD80004D11E /* RnMortyApiUITests.swift */; };
 		D888D8BE2AD40DD80004D11E /* RnMortyApiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8BD2AD40DD80004D11E /* RnMortyApiUITestsLaunchTests.swift */; };
+		D888D8CD2AD40E1F0004D11E /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8CC2AD40E1F0004D11E /* CharacterDetailView.swift */; };
+		D888D8D12AD40E440004D11E /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8D02AD40E440004D11E /* EpisodeView.swift */; };
+		D888D8D62AD40E830004D11E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8D52AD40E830004D11E /* HomeView.swift */; };
+		D888D8DC2AD40FDB0004D11E /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8DB2AD40FDB0004D11E /* ApiRequest.swift */; };
+		D888D8DE2AD410280004D11E /* RMCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8DD2AD410280004D11E /* RMCharacters.swift */; };
+		D888D8E02AD420980004D11E /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8DF2AD420980004D11E /* CharacterListView.swift */; };
+		D888D8E22AD4217B0004D11E /* GetAllCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8E12AD4217B0004D11E /* GetAllCharacters.swift */; };
+		D888D8E42AD435660004D11E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8E32AD435660004D11E /* Location.swift */; };
+		D888D8E62AD435A00004D11E /* GetLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8E52AD435A00004D11E /* GetLocations.swift */; };
+		D888D8EF2AD4382E0004D11E /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8EE2AD4382E0004D11E /* LocationListView.swift */; };
+		D888D8F12AD4385B0004D11E /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8F02AD4385B0004D11E /* LocationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,17 @@
 		D888D8B72AD40DD80004D11E /* RnMortyApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RnMortyApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D888D8BB2AD40DD80004D11E /* RnMortyApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RnMortyApiUITests.swift; sourceTree = "<group>"; };
 		D888D8BD2AD40DD80004D11E /* RnMortyApiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RnMortyApiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D888D8CC2AD40E1F0004D11E /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterDetailView.swift; path = RnMortyApi/Tabs/CharacterDetailView.swift; sourceTree = SOURCE_ROOT; };
+		D888D8D02AD40E440004D11E /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EpisodeView.swift; path = RnMortyApi/Tabs/EpisodeView.swift; sourceTree = SOURCE_ROOT; };
+		D888D8D52AD40E830004D11E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = RnMortyApi/Tabs/HomeView.swift; sourceTree = SOURCE_ROOT; };
+		D888D8DB2AD40FDB0004D11E /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApiRequest.swift; path = RnMortyApi/API/Networking/ApiRequest.swift; sourceTree = SOURCE_ROOT; };
+		D888D8DD2AD410280004D11E /* RMCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RMCharacters.swift; path = RnMortyApi/API/Models/RMCharacters.swift; sourceTree = SOURCE_ROOT; };
+		D888D8DF2AD420980004D11E /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		D888D8E12AD4217B0004D11E /* GetAllCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCharacters.swift; sourceTree = "<group>"; };
+		D888D8E32AD435660004D11E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		D888D8E52AD435A00004D11E /* GetLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocations.swift; sourceTree = "<group>"; };
+		D888D8EE2AD4382E0004D11E /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		D888D8F02AD4385B0004D11E /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,13 +116,15 @@
 		D888D89F2AD40DD60004D11E /* RnMortyApi */ = {
 			isa = PBXGroup;
 			children = (
+				D888D8D82AD40F960004D11E /* API */,
+				D888D8CB2AD40E040004D11E /* Tabs */,
 				D888D8A02AD40DD60004D11E /* RnMortyApiApp.swift */,
 				D888D8A22AD40DD60004D11E /* ContentView.swift */,
 				D888D8A42AD40DD70004D11E /* Assets.xcassets */,
 				D888D8A62AD40DD70004D11E /* Preview Content */,
 			);
 			path = RnMortyApi;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		D888D8A62AD40DD70004D11E /* Preview Content */ = {
 			isa = PBXGroup;
@@ -126,6 +150,51 @@
 			);
 			path = RnMortyApiUITests;
 			sourceTree = "<group>";
+		};
+		D888D8CB2AD40E040004D11E /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				D888D8CC2AD40E1F0004D11E /* CharacterDetailView.swift */,
+				D888D8D02AD40E440004D11E /* EpisodeView.swift */,
+				D888D8D52AD40E830004D11E /* HomeView.swift */,
+				D888D8DF2AD420980004D11E /* CharacterListView.swift */,
+				D888D8EE2AD4382E0004D11E /* LocationListView.swift */,
+				D888D8F02AD4385B0004D11E /* LocationDetailView.swift */,
+			);
+			name = Tabs;
+			path = RnMortyApi/Tabs;
+			sourceTree = SOURCE_ROOT;
+		};
+		D888D8D82AD40F960004D11E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D888D8DA2AD40FA80004D11E /* Models */,
+				D888D8D92AD40F9B0004D11E /* Networking */,
+			);
+			name = API;
+			path = RnMortyApi/API;
+			sourceTree = SOURCE_ROOT;
+		};
+		D888D8D92AD40F9B0004D11E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D888D8DB2AD40FDB0004D11E /* ApiRequest.swift */,
+				D888D8E12AD4217B0004D11E /* GetAllCharacters.swift */,
+				D888D8E52AD435A00004D11E /* GetLocations.swift */,
+			);
+			name = Networking;
+			path = RnMortyApi/API/Networking;
+			sourceTree = SOURCE_ROOT;
+		};
+		D888D8DA2AD40FA80004D11E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D888D8DD2AD410280004D11E /* RMCharacters.swift */,
+				D888D8E32AD435660004D11E /* Location.swift */,
+			);
+			name = Models;
+			path = RnMortyApi/API/Models;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -257,8 +326,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D888D8DE2AD410280004D11E /* RMCharacters.swift in Sources */,
+				D888D8E42AD435660004D11E /* Location.swift in Sources */,
+				D888D8D62AD40E830004D11E /* HomeView.swift in Sources */,
+				D888D8CD2AD40E1F0004D11E /* CharacterDetailView.swift in Sources */,
+				D888D8E02AD420980004D11E /* CharacterListView.swift in Sources */,
 				D888D8A32AD40DD60004D11E /* ContentView.swift in Sources */,
 				D888D8A12AD40DD60004D11E /* RnMortyApiApp.swift in Sources */,
+				D888D8DC2AD40FDB0004D11E /* ApiRequest.swift in Sources */,
+				D888D8E62AD435A00004D11E /* GetLocations.swift in Sources */,
+				D888D8EF2AD4382E0004D11E /* LocationListView.swift in Sources */,
+				D888D8F12AD4385B0004D11E /* LocationDetailView.swift in Sources */,
+				D888D8E22AD4217B0004D11E /* GetAllCharacters.swift in Sources */,
+				D888D8D12AD40E440004D11E /* EpisodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
