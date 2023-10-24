@@ -8,24 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isLoggedIn: Bool = false
+    
     var body: some View {
-        TabView{
-            HomeView()
-                .tabItem{
-                    Label("Home", systemImage: "house.fill")
-                }
-            CharacterListView()
-                .tabItem{
-                    Label("Characters", systemImage: "figure.stand")
-                }
-            LocationListView()
-                .tabItem{
-                    Label("Locations", systemImage: "location.circle.fill")
-                }
-            EpisodeView()
-                .tabItem{
-                    Label("Episodes", systemImage: "play.square.stack")
-                }
+        if isLoggedIn{
+            TabView{
+                HomeView()
+                    .tabItem{
+                        Label("Home", systemImage: "house.fill")
+                    }
+                CharacterListView()
+                    .tabItem{
+                        Label("Characters", systemImage: "figure.stand")
+                    }
+                LocationListView()
+                    .tabItem{
+                        Label("Locations", systemImage: "location.circle.fill")
+                    }
+                EpisodeView()
+                    .tabItem{
+                        Label("Episodes", systemImage: "play.square.stack")
+                    }
+                ProfileView()
+                    .tabItem {
+                        Label("Profile" , systemImage: "person.fill")
+                    }
+            }
+        }else{
+            LoginView()
         }
     }
 }
