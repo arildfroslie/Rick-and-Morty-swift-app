@@ -10,6 +10,7 @@
 		0B636FC22AE6A57A0061C69D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B636FC12AE6A5790061C69D /* ProfileView.swift */; };
 		0BA15CDD2AE6BFE9006E05D8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA15CDC2AE6BFE9006E05D8 /* LoginView.swift */; };
 		0BA15CDF2AE6C531006E05D8 /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA15CDE2AE6C531006E05D8 /* CreateProfileView.swift */; };
+		0BA15CE72AE824C4006E05D8 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA15CE62AE824C4006E05D8 /* UserData.swift */; };
 		0BC17D772AE6B4BA004B69C5 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC17D762AE6B4BA004B69C5 /* KeychainSwift */; };
 		D888D8A12AD40DD60004D11E /* RnMortyApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8A02AD40DD60004D11E /* RnMortyApiApp.swift */; };
 		D888D8A32AD40DD60004D11E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888D8A22AD40DD60004D11E /* ContentView.swift */; };
@@ -52,6 +53,7 @@
 		0B636FC12AE6A5790061C69D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0BA15CDC2AE6BFE9006E05D8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0BA15CDE2AE6C531006E05D8 /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
+		0BA15CE62AE824C4006E05D8 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		D888D89D2AD40DD60004D11E /* RnMortyApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RnMortyApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D888D8A02AD40DD60004D11E /* RnMortyApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RnMortyApiApp.swift; sourceTree = "<group>"; };
 		D888D8A22AD40DD60004D11E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				D888D8DD2AD410280004D11E /* RMCharacters.swift */,
 				D888D8E32AD435660004D11E /* Location.swift */,
+				0BA15CE62AE824C4006E05D8 /* UserData.swift */,
 			);
 			name = Models;
 			path = RnMortyApi/API/Models;
@@ -362,6 +365,7 @@
 				D888D8A12AD40DD60004D11E /* RnMortyApiApp.swift in Sources */,
 				D888D8DC2AD40FDB0004D11E /* ApiRequest.swift in Sources */,
 				D888D8E62AD435A00004D11E /* GetLocations.swift in Sources */,
+				0BA15CE72AE824C4006E05D8 /* UserData.swift in Sources */,
 				D888D8EF2AD4382E0004D11E /* LocationListView.swift in Sources */,
 				D888D8F12AD4385B0004D11E /* LocationDetailView.swift in Sources */,
 				D888D8E22AD4217B0004D11E /* GetAllCharacters.swift in Sources */,

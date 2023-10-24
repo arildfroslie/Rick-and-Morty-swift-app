@@ -6,37 +6,43 @@
 //
 
 import SwiftUI
+import KeychainSwift
 
 struct ContentView: View {
-    @State var isLoggedIn: Bool = false
+    
+    @EnvironmentObject var userData: UserData
     
     var body: some View {
-        if isLoggedIn{
-            TabView{
-                HomeView()
-                    .tabItem{
-                        Label("Home", systemImage: "house.fill")
-                    }
-                CharacterListView()
-                    .tabItem{
-                        Label("Characters", systemImage: "figure.stand")
-                    }
-                LocationListView()
-                    .tabItem{
-                        Label("Locations", systemImage: "location.circle.fill")
-                    }
-                EpisodeView()
-                    .tabItem{
-                        Label("Episodes", systemImage: "play.square.stack")
-                    }
-                ProfileView()
-                    .tabItem {
-                        Label("Profile" , systemImage: "person.fill")
-                    }
-            }
-        }else{
-            LoginView()
+        if userData.isLoggedIn{
+            return AnyView(
+                TabView {
+                    HomeView()
+                        .tabItem {
+                            Label("Home", systemImage: "house.fill")
+                        }
+                    CharacterListView()
+                        .tabItem {
+                            Label("Characters", systemImage: "figure.stand")
+                        }
+                    LocationListView()
+                        .tabItem {
+                            Label("Locations", systemImage: "location.circle.fill")
+                        }
+                    EpisodeView()
+                        .tabItem {
+                            Label("Episodes", systemImage: "play.square.stack")
+                        }
+                    ProfileView()
+                        .tabItem {
+                            Label("Profile", systemImage: "person.fill")
+                        }
+                    
+                }
+            )
+        } else {
+            return AnyView(LoginView())
         }
+        
     }
 }
 

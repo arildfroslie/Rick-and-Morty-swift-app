@@ -6,12 +6,23 @@
 //
 
 import SwiftUI
+import KeychainSwift
 
 struct LoginView: View {
     
-    @State private var username = ""
-    @State private var password = ""
+    @EnvironmentObject var userData: UserData
     @State private var isProfileViewActive = false
+
+    func isValidUser(username: String, password: String) -> Bool {
+        let keychain = KeychainSwift()
+        
+        if let storedUsername = UserDefaults.standard.string(forKey: AppStorageKeys.username.rawValue),
+           let storedPassword = keychain.get(AppStorageKeys.password.rawValue) {
+            return username == storedUsername && password == storedPassword
+        }
+        
+        return false
+    }
     
     var body: some View {
         NavigationStack {
@@ -28,15 +39,19 @@ struct LoginView: View {
                     .padding(.bottom, 50)
                 
                 VStack {
-                    TextField("Username", text: self.$username)
+                    TextField("Username", text: self.$userData.username)
                         .padding()
                         .cornerRadius(20.0)
-                    SecureField("Password", text: self.$password)
+                    SecureField("Password", text: self.$userData.password)
                         .padding()
                         .cornerRadius(20.0)
                 }.padding([.leading, .trailing], 27.5)
                 
-                Button(action: {}) {
+                Button(action: {
+                    if isValidUser(username: self.userData.username, password: self.userData.password) {
+                        userData.isLoggedIn = true
+                    }
+                }) {
                     Text("Sign In")
                         .font(.headline)
                         .foregroundColor(.white)
@@ -47,16 +62,16 @@ struct LoginView: View {
                 }
                 Spacer()
                 
-                NavigationLink(destination: ProfileView(), isActive: $isProfileViewActive) { // NavigationLink to ProfileView
+                NavigationLink(destination: CreateProfileView(), isActive: $isProfileViewActive) {
                     Text("Don't have an account? Sign up here")
                         .onTapGesture {
-                            isProfileViewActive = true // Activate the NavigationLink
+                            isProfileViewActive = true
                         }
                 }
                 
                 Spacer()
             }
-            .navigationBarHidden(true)
+            
         }
     }
 }
